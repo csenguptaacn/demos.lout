@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -23,7 +22,7 @@
             }
           );
         },
-        'https://sonyhondamobility01--devpro1.sandbox.my.salesforce.com'
+        'https://sonyhondamobility01--devpro1.sandbox.my.site.com'
       );
     </script>
   </body>
