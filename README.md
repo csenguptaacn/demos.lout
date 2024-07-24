@@ -14,7 +14,7 @@
         function () {
           // Callback once framework and app loaded
           $Lightning.createComponent(
-            'c:cs_MessagingSessionUtility', // top-level component of your app
+            'c:SampleWebViewCmp', // top-level component of your app
             {}, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
