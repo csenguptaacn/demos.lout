@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div>Afeela Hoster</div>
+    <div>Welcome, I am Afeela Hoster</div>
     <div id="lightningout"></div>
 
     <script src="https://sonyhondamobility01--devpro1.sandbox.my.site.com/CustServicePortal/lightning/lightning.out.js"></script>
