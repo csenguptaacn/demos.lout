@@ -15,7 +15,10 @@
           // Callback once framework and app loaded
           $Lightning.createComponent(
             'c:cs_MessagingSessionUtility', // top-level component of your app
-            {}, // attributes to set on the component when created
+            {
+               clientsessionid='c1235',
+               afeelaid='af3648769'
+            }, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
               // callback when component is created and active on the page
