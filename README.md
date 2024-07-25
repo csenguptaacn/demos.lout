@@ -16,7 +16,7 @@
           $Lightning.createComponent(
             'c:cs_MessagingSessionUtility', // top-level component of your app
             {
-               'clientsessionid' : 'c1235',
+               'clientsessionid' : 'c12356',
                'afeelaid' : 'af3648769',
             }, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
