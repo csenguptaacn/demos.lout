@@ -29,7 +29,7 @@
     </script>
      <script src="https://sonyhondamobility01--devpro1.sandbox.my.site.com/CustServicePortal/lightning/lightning.out.js"></script>
     <script>
-      $Lightning.use(
+      /*$Lightning.use(
         'c:cs_SHMLightningOutApp', // name of the Lightning app
         function () {
           // Callback once framework and app loaded
@@ -46,7 +46,7 @@
           );
         },
         'https://sonyhondamobility01--devpro1.sandbox.my.site.com/CustServicePortal'
-      );
+      );*/
     </script>
   </body>
 </html>
