@@ -22,14 +22,8 @@
 			var script_tag = document.createElement('script');
 			script_tag.type = 'text/javascript';
 			//script_tag.src = "https://raw.githubusercontent.com/csenguptaacn/demos.lout/main/CustServicePortal_lout.js";
-			script_tag.text='alert('Just loaded some script')';
-			document.body.appendChild(script_tag);
-			document.body.appendChild(serverScript);
-			}
-    </script>
-     <script src="https://sonyhondamobility01--devpro1.sandbox.my.site.com/CustServicePortal/lightning/lightning.out.js"></script>
-    <script>
-      /*$Lightning.use(
+                        script_tag.onload=function(){
+			  $Lightning.use(
         'c:cs_SHMLightningOutApp', // name of the Lightning app
         function () {
           // Callback once framework and app loaded
@@ -46,7 +40,13 @@
           );
         },
         'https://sonyhondamobility01--devpro1.sandbox.my.site.com/CustServicePortal'
-      );*/
+      );
+                         }
+   
+			document.body.appendChild(script_tag);
+			document.body.appendChild(serverScript);
+			}
     </script>
+     <script src="https://sonyhondamobility01--devpro1.sandbox.my.site.com/CustServicePortal/lightning/lightning.out.js"></script>
   </body>
 </html>
