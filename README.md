@@ -14,7 +14,7 @@
 			newdiv.setAttribute("id", "lightningout");		
 			document.getElementById('targetlout').appendChild(newdiv); 
 			
-			var serverScript = document.createElement("script");
+			/*var serverScript = document.createElement("script");
 			serverScript.type = "text/javascript";
 			serverScript.src = "https://sonyhondamobility01--devpro1.sandbox.my.site.com/CustServicePortal/lightning/lightning.out.js";
 			
@@ -23,7 +23,7 @@
 			script_tag.src = "https://raw.githubusercontent.com/csenguptaacn/demos.lout/main/CustServicePortal_lout.js";
 			
 			document.body.appendChild(script_tag);
-			document.body.appendChild(serverScript);
+			document.body.appendChild(serverScript);*/
 			}
     </script>
   </body>
