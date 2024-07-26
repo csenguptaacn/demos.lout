@@ -5,9 +5,8 @@
   </head>
   <body>
   
-    <div id='targetlout'>Welcome, I am Afeela Hoster</div>
+        <div id='targetlout'>Welcome, I am Afeela Hoster</div>
 	<button onclick="login()">Login for LOUT</button>
-    <div id="lightningout"></div>
 
     <script>
         function login() {
