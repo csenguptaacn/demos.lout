@@ -15,19 +15,15 @@
 			//document.getElementById('targetlout').appendChild(newdiv); 
                          document.body.appendChild(newdiv);   
 			
-			var serverScript = document.createElement("script");
+			/*var serverScript = document.createElement("script");
 			serverScript.type = "text/javascript";
-			serverScript.src = "https://sonyhondamobility01--devpro1.sandbox.my.site.com/CustServicePortal/lightning/lightning.out.js";
+			serverScript.src = "https://sonyhondamobility01--devpro1.sandbox.my.site.com/CustServicePortal/lightning/lightning.out.js";*/
 			
-			var script_tag = document.createElement('script');
-			script_tag.type = 'text/javascript';
-			//script_tag.src = "https://raw.githubusercontent.com/csenguptaacn/demos.lout/main/CustServicePortal_lout.js";
-                        script_tag.onload=function(){
-			  $Lightning.use(
-        'c:cs_SHMLightningOutApp', // name of the Lightning app
-        function () {
+			$Lightning.use(
+			'c:cs_SHMLightningOutApp', // name of the Lightning app
+			function () {
           // Callback once framework and app loaded
-          $Lightning.createComponent(
+			$Lightning.createComponent(
             'c:cs_MessagingSessionUtility', // top-level component of your app
             {
                'clientsessionid' : 'c12356',
@@ -36,15 +32,11 @@
             'lightningout', // the DOM location to insert the component
             function (cmp) {
               // callback when component is created and active on the page
-            }
-          );
-        },
+				}
+			);
+			},
         'https://sonyhondamobility01--devpro1.sandbox.my.site.com/CustServicePortal'
       );
-                         }
-   
-			document.body.appendChild(script_tag);
-			document.body.appendChild(serverScript);
 			}
     </script>
      <script src="https://sonyhondamobility01--devpro1.sandbox.my.site.com/CustServicePortal/lightning/lightning.out.js"></script>
