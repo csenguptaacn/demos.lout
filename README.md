@@ -53,6 +53,10 @@
 					scrt2URL: 'https://sonyhondamobility01--devpro1.sandbox.my.salesforce-scrt.com'
 				}
 			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
 			window.addEventListener('onEmbeddedMessagingReady', () => {
 			console.log('Embedded Messaging is ready');
 			// eslint-disable-next-line no-undef
@@ -63,10 +67,6 @@
 			'SessionId' : 'cs455737297432',
         });
       });
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
 </script>
 <script type='text/javascript' src='https://sonyhondamobility01--devpro1.sandbox.my.site.com/ESWMIAWBOt1712677727186/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
   </body>
