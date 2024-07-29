@@ -35,5 +35,6 @@
       );
 			}
     </script>
+	<script src="	https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacss/lightning/lightning.out.js"></script>
      </body>
 </html>
