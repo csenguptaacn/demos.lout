@@ -57,16 +57,6 @@
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
-			window.addEventListener('onEmbeddedMessagingReady', () => {
-			console.log('Embedded Messaging is ready');
-			// eslint-disable-next-line no-undef
-			embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-			// prettier-ignore
-			'User_Id' : 'af1287254218',
-			// prettier-ignore
-			'SessionId' : 'cs455737297432',
-        });
-      });
 </script>
 <script type='text/javascript' src='https://sonyhondamobility01--devpro1.sandbox.my.site.com/ESWMIAWBOt1712677727186/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
   </body>
