@@ -53,6 +53,16 @@
 					scrt2URL: 'https://sonyhondamobility01--devpro1.sandbox.my.salesforce-scrt.com'
 				}
 			);
+			window.addEventListener('onEmbeddedMessagingReady', () => {
+			console.log('Embedded Messaging is ready');
+			// eslint-disable-next-line no-undef
+			embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
+			// prettier-ignore
+			'User_Id' : 'af1287254218',
+			// prettier-ignore
+			'SessionId' : 'cs455737297432',
+        });
+      });
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
