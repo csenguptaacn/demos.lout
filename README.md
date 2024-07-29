@@ -23,7 +23,7 @@
             'c:CSMessagingSessionUtility', // top-level component of your app
             {
                'clientsessionid' : 'cs4557383492',
-               'afeelaid' : '',
+               'afeelaid' : 'af5649586',
             }, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
