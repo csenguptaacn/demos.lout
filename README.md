@@ -26,8 +26,8 @@
 			$Lightning.createComponent(
             'c:cs_MessagingSessionUtility', // top-level component of your app
             {
-               'clientsessionid' : 'cs1234567',
-               'afeelaid' : 'af1115678',
+               'clientsessionid' : 'cs4557383492',
+               'afeelaid' : 'af11156888',
             }, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
@@ -58,8 +58,8 @@
 		}
 	};
 	
-	 var userid = "af1287254218";
-     var sid = "cs455737297432";
+	 var userid = "";
+     var sid = "cs4557383492";
 	
 	  window.addEventListener("onEmbeddedMessagingReady", e => {
         //log event
