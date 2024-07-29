@@ -20,7 +20,7 @@
 			function () {
           // Callback once framework and app loaded
 			$Lightning.createComponent(
-            'c:CS_MessagingSessionUtility', // top-level component of your app
+            'c:CSMessagingSessionUtility', // top-level component of your app
             {
                'clientsessionid' : 'cs4557383492',
                'afeelaid' : '',
