@@ -22,8 +22,8 @@
 			$Lightning.createComponent(
             'c:CSMessagingSessionUtility', // top-level component of your app
             {
-               'clientsessionid' : 'cs767256987',
-               'afeelaid' : 'af4647685',
+               'clientsessionid' : 'cs767587977',
+               'afeelaid' : 'af464787685',
             }, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
@@ -57,8 +57,8 @@
 	window.addEventListener(
         "onEmbeddedMessagingReady", () => {
             embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
-                'CS_AfeelaId' : 'af3463788',
-		'CS_SessionId' : 'cs7675357'
+                'CS_AfeelaId' : '',
+		'CS_SessionId' : 'cs767587977'
             } );
         }
     );
