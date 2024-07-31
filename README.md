@@ -57,8 +57,8 @@
 	window.addEventListener(
         "onEmbeddedMessagingReady", () => {
             embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
-                'CS_AfeelaId' : '',
-		'CS_SessionId' : 'cser09734564277'
+                'CS_AfeelaId' : 'af35262737',
+		'CS_SessionId' : 'cs235262677'
             } );
         }
     );
