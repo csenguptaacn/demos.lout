@@ -31,7 +31,7 @@
 				}
 			);
 			},
-		'https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacss'
+		'https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacs'
       );
 			}
     </script>
