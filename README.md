@@ -1,12 +1,16 @@
-<html lang="en">
-  <head>
-    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-  
-        <div id='targetlout'>Welcome, I am Afeela Hoster -----!!!</div>
-	<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D0o000001CMOx" method="POST">
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D0o000001CMOx" method="POST">
 
 <input type=hidden name="oid" value="00D0o000001CMOx">
 <input type=hidden name="retURL" value="http://google.com">
@@ -25,14 +29,18 @@
 
 <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
 
-<label for="country">Country</label><input  id="country" maxlength="40" name="country" size="20" type="text" /><br>
+<label for="country">Country</label><br>
+<!--<input  id="country" maxlength="40" name="country" size="20" type="text" /><br>-->
+
+<select id="country" name="country">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
 
 <label for="zip">Zip</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
 
 <input type="submit" name="submit">
 
 </form>
-
-
-	</body>
-</html>
