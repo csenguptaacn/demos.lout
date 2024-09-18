@@ -33,10 +33,10 @@
 <!--<input  id="country" maxlength="40" name="country" size="20" type="text" /><br>-->
 
 <select id="country" name="country">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
+  <option value="volvo">Japan</option>
+  <option value="saab">USA</option>
+  <option value="mercedes">India</option>
+  <option value="audi">UK</option>
 </select>
 
 <label for="zip">Zip</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
