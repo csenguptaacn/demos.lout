@@ -1,40 +1,67 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
   </head>
   <body>
-    <div>WEB TO LEAD Hoster</div>
-    <div id="lightningout"></div>
-  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D0o000001CMOx" method="POST">
+  
+        <div id='targetlout'>Welcome, I am Afeela Hoster -----!!!</div>
+	<button onclick="login()">Login for LOUT</button>
 
-<input type=hidden name="oid" value="00D0o000001CMOx">
-<input type=hidden name="retURL" value="http://">
+    <script>
+        function login() {
+		    var newdiv = document.createElement('div');
+			newdiv.setAttribute("id", "lightningout");		
+                         document.body.appendChild(newdiv);   
+			
+			
+			$Lightning.use(
+			'c:CS_SHMLightningOutApp', // name of the Lightning app
+			function () {
+          // Callback once framework and app loaded
+			$Lightning.createComponent(
+            'c:CSMessagingSessionUtility', // top-level component of your app
+            {
+               'clientsessionid' : 'csi5778345',
+               'afeelaid' : 'af56479586',
+            }, // attributes to set on the component when created
+            'lightningout', // the DOM location to insert the component
+            function (cmp) {
+              // callback when component is created and active on the page
+				}
+			);
+			},
+		'https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacp'
+      );
+			}
+    </script>
+	<script src="https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacp/lightning/lightning.out.js"></script>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="chandrangshu.chandu@gmail.com">                                  -->
-<!--  ----------------------------------------------------------------------  -->
-
-<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-
-<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-
-<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
-
-<label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
-
-<label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
-
-<input type="submit" name="submit">
-
-</form>
-    
-  </body>
+			embeddedservice_bootstrap.init(
+				'00DQL000003Reaj',
+				'ECS',
+				'https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWECS1723011659341',
+				{
+					scrt2URL: 'https://sonyhondamobility01--dev1.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+    	window.addEventListener(
+        "onEmbeddedMessagingReady", () => {
+            embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
+                'CS_AfeelaId' : '',
+				'CS_SessionId' : 'csir5778345'
+            } );
+        }
+    );
+</script>
+<script type='text/javascript' src='https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWECS1723011659341/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+	</body>
 </html>
