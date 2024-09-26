@@ -1,15 +1,18 @@
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
-
+<!DOCTYPE html>
+<html>
+<head>
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<style>
+div {padding:3px;}
+label {padding:2px;}
+input {padding:2px;}
+</style>
+</head>
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
-
+<body>
 <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQL000003Reaj" method="POST">
 
 <input type=hidden name="oid" value="00DQL000003Reaj">
@@ -55,3 +58,5 @@
 <input type="submit" name="submit">
 
 </form>
+</body>
+</html>
