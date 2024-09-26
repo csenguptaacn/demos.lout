@@ -84,7 +84,7 @@ div {
 </div>
 <div class="newsletter">
 <label>Receive Emails Newsletter:</label>
-<input id="00NQL000009itMz" name="00NQL000009itMz" type="checkbox" value="1" /><br>
+<input id="00NQL000009itMz" name="00NQL000009itMz" type="checkbox" value="2" /><br>
 </div>
 
 <input type="submit" name="submit">
