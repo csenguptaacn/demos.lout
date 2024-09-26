@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
@@ -6,6 +5,7 @@
 div {padding:3px;}
 label {padding:2px;}
 input {padding:2px;}
+div .newsletter{visibility:hidden}
 </style>
 </head>
 
@@ -13,6 +13,7 @@ input {padding:2px;}
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 <body>
+  <h1>WEB TO LEAD FORM</h1>
 <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQL000003Reaj" method="POST">
 
 <input type=hidden name="oid" value="00DQL000003Reaj">
