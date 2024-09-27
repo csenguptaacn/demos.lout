@@ -72,8 +72,6 @@ div {
 <div>
 <label for="zip">Zip</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
 </div>
-<div class="newsletter">
-
 
 <input type="submit" name="submit">
 
