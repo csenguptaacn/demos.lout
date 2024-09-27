@@ -40,9 +40,6 @@ div {
 </style>
 </head>
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
 <body>
   <h1>WEB TO LEAD FORM</h1>
 <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQL000003Reaj" method="POST">
@@ -50,13 +47,6 @@ div {
 <input type=hidden name="oid" value="00DQL000003Reaj">
 <input type=hidden name="retURL" value="https://www.shm-afeela.com/en/subscribe/">
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="c.sengupta@accenture.com">                                       -->
-<!--  ----------------------------------------------------------------------  -->
 <div>
 <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 </div>
