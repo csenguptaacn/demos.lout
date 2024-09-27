@@ -83,9 +83,7 @@ div {
 <label for="zip">Zip</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
 </div>
 <div class="newsletter">
-<label>Receive Emails Newsletter:</label>
-<input id="00NQL000009itMz" name="00NQL000009itMz" type="checkbox" value="2" /><br>
-</div>
+
 
 <input type="submit" name="submit">
 
