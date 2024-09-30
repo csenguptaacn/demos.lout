@@ -45,7 +45,7 @@ div {
 <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQL000003Reaj" method="POST">
 
 <input type=hidden name="oid" value="00DQL000003Reaj">
-<input type=hidden name="retURL" value="https://www.shm-afeela.com/en/subscribe/">
+<input type=hidden name="retURL" value="https://csenguptaacn.github.io/demos.lout/">
 
 <div>
 <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
