@@ -1,6 +1,8 @@
 <html>
 <head>
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <style>
 div {padding:3px;}
 label {padding:2px;}
@@ -43,6 +45,9 @@ div {
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
 function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+function recaptcha_callback(){
+$('.button').prop("disabled", false);
+}
 </script>
  
 <!--  ----------------------------------------------------------------------  -->
@@ -77,7 +82,7 @@ function timestamp() { var response = document.getElementById("g-recaptcha-respo
 <label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
  
 <div class="g-recaptcha" data-sitekey="6LdUhEkqAAAAAD3c_DaFDSP29kw6Ej6bMnwo1KMk"></div><br>
-<input type="submit" name="submit">
+<input type="submit" name="submit" id="submitBtn" disabled="true" class="button" data-callback="recaptcha_callback" >
  
 </form>
 </body>
