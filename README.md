@@ -97,7 +97,7 @@ function callValidation(){
 <label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
  
 <div class="g-recaptcha" data-sitekey="6LdUhEkqAAAAAD3c_DaFDSP29kw6Ej6bMnwo1KMk"></div><br>
-<input type="submit" name="submit" id="submitBtn" disabled="true" class="button" onclick="return callValidation();" >
+<input type="submit" name="submit" id="submitBtn" class="button" onclick="return callValidation();" >
  
 </form>
 </body>
