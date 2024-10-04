@@ -48,6 +48,21 @@ function timestamp() { var response = document.getElementById("g-recaptcha-respo
 function recaptcha_callback(){
 $('.button').prop("disabled", false);
 }
+
+function callValidation(){
+
+  if(grecaptcha.getResponse().length == 0){
+
+            alert('Please click the reCAPTCHA checkbox');
+
+            return false;
+
+        }
+
+        return true;
+
+    }
+
 </script>
  
 <!--  ----------------------------------------------------------------------  -->
@@ -82,7 +97,7 @@ $('.button').prop("disabled", false);
 <label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
  
 <div class="g-recaptcha" data-sitekey="6LdUhEkqAAAAAD3c_DaFDSP29kw6Ej6bMnwo1KMk"></div><br>
-<input type="submit" name="submit" id="submitBtn" disabled="true" class="button" data-callback="recaptcha_callback" >
+<input type="submit" name="submit" id="submitBtn" disabled="true" class="button" onclick="return callValidation();" >
  
 </form>
 </body>
