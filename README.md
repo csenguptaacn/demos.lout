@@ -44,10 +44,10 @@ div {
 <!--  ----------------------------------------------------------------------  -->
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
-function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-function recaptcha_callback(){
-$('.button').prop("disabled", false);
-}
+//function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+//function recaptcha_callback(){
+//$('.button').prop("disabled", false);
+//}
 
 function callValidation(){
 
