@@ -31,11 +31,11 @@
 				}
 			);
 			},
-		'https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacp'
+		'https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacs'
       );
 			}
     </script>
-	<script src="https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacpvforcesite/lightning/lightning.out.js"></script>
+	<script src="https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacs/lightning/lightning.out.js"></script>
 	<script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
