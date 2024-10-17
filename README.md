@@ -22,7 +22,7 @@
 			$Lightning.createComponent(
             'c:CSMessagingSessionUtility', // top-level component of your app
             {
-               'clientsessionid' : 'csi577898345',
+               'clientsessionid' : 'csi5778345',
                'afeelaid' : 'af56479586',
             }, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
@@ -31,7 +31,7 @@
 				}
 			);
 			},
-		'https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacpvforcesite'
+		'https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacp'
       );
 			}
     </script>
@@ -57,7 +57,7 @@
         "onEmbeddedMessagingReady", () => {
             embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
                 'CS_AfeelaId' : '',
-				'CS_SessionId' : 'csi577898345'
+				'CS_SessionId' : 'csi5778345'
             } );
         }
     );
