@@ -31,11 +31,11 @@
 				}
 			);
 			},
-		'https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacs'
+		'https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelachathost'
       );
 			}
     </script>
-	<script src="https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacs/lightning/lightning.out.js"></script>
+	<script src="https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelachathost/lightning/lightning.out.js"></script>
 	<script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
@@ -53,15 +53,7 @@
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
-	 window.addEventListener(
-        "onEmbeddedMessagingReady", () => {
-            embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
-                'CS_AfeelaId' : '',
-				'CS_SessionId' : 'csi5778345'
-            } );
-        }
-    );
 </script>
-<script type='text/javascript' src='https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWECS1723011659341/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>	
+<script type='text/javascript' src='https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWECS1723011659341/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 	</body>
 </html>
