@@ -22,8 +22,8 @@
 			$Lightning.createComponent(
             'c:CSMessagingSessionUtility', // top-level component of your app
             {
-               'clientsessionid' : 'csi5778345',
-               'afeelaid' : 'af56479586',
+               'clientsessionid' : 'csisit7700',
+               'afeelaid' : 'af2963429',
             }, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
@@ -31,12 +31,13 @@
 				}
 			);
 			},
-		'https://sonyhondamobility01--qa.sandbox.my.site.com/afeelacss'
+		'https://sonyhondamobility01--qa.sandbox.my.site.com/afeelachathost'
       );
 			}
     </script>
-	<script src="https://sonyhondamobility01--qa.sandbox.my.site.com/afeelacss/lightning/lightning.out.js"></script>
-	<script type='text/javascript'>
+	<script src="https://sonyhondamobility01--qa.sandbox.my.site.com/afeelachathost/lightning/lightning.out.js"></script>
+	
+<script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
@@ -53,15 +54,18 @@
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
-	 window.addEventListener(
+			window.addEventListener(
         "onEmbeddedMessagingReady", () => {
             embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
                 'CS_AfeelaId' : '',
-				'CS_SessionId' : 'csi5778345'
+				'CS_SessionId' : 'csisit7700'
             } );
         }
     );
 </script>
 <script type='text/javascript' src='https://sonyhondamobility01--qa.sandbox.my.site.com/ESWECS1723011659341/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+
+
 	</body>
 </html>
