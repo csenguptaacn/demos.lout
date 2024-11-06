@@ -36,7 +36,6 @@
 			}
     </script>
 	<script src="https://sonyhondamobility01--sit.sandbox.my.site.com/afeelachathost/lightning/lightning.out.js"></script>
-	<script type='text/javascript'>
 	
 	<script type='text/javascript'>
 	function initEmbeddedMessaging() {
