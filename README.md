@@ -23,7 +23,7 @@
             'c:CSMessagingSessionUtility', // top-level component of your app
             {
                'clientsessionid' : 'csi5778345',
-               'afeelaid' : 'af56479586',
+               'afeelaid' : 'af2963429',
             }, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
@@ -53,6 +53,15 @@
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
+	
+		window.addEventListener(
+        "onEmbeddedMessagingReady", () => {
+            embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
+                'CS_AfeelaId' : '',
+				'CS_SessionId' : 'csi5778345'
+            } );
+        }
+    );
 </script>
 <script type='text/javascript' src='https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWECS1723011659341/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 	</body>
