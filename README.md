@@ -5,25 +5,24 @@
   </head>
   <body>
   
-        <div id='targetlout'>Welcome, I am Afeela Hoster -----!!!</div>
+        <div id='targetlout'>Welcome, I am Afeela Hoster</div>
 	<button onclick="login()">Login for LOUT</button>
 
     <script>
         function login() {
 		    var newdiv = document.createElement('div');
 			newdiv.setAttribute("id", "lightningout");		
-                         document.body.appendChild(newdiv);   
-			
+            document.body.appendChild(newdiv);   
 			
 			$Lightning.use(
-			'c:CS_SHMLightningOutApp', // name of the Lightning app
+			'c:cs_SHMLightningOutApp', // name of the Lightning app
 			function () {
           // Callback once framework and app loaded
 			$Lightning.createComponent(
-            'c:CSMessagingSessionUtility', // top-level component of your app
+            'c:cs_MessagingSessionUtility', // top-level component of your app
             {
-               'clientsessionid' : 'csi567845',
-               'afeelaid' : 'af543774',
+               'clientsessionid' : 'C26478',
+               'afeelaid' : 'af1115678',
             }, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
@@ -31,22 +30,22 @@
 				}
 			);
 			},
-		'https://sonyhondamobility01--uat.sandbox.my.site.com/afeelachathost'
+            'https://sonyhondamobility01.my.site.com/afeelachathost'
       );
 			}
     </script>
-	<script src="https://sonyhondamobility01--uat.sandbox.my.site.com/afeelachathost/lightning/lightning.out.js"></script>
-	<script type='text/javascript'>
+     <script src="https://sonyhondamobility01.my.site.com/afeelachathost/lightning/lightning.out.js"></script>
+    <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
 			embeddedservice_bootstrap.init(
-				'00DQL000006RAW5',
+				'00DHp000003U1R1',
 				'ECS',
-				'https://sonyhondamobility01--uat.sandbox.my.site.com/ESWECS1723011659341',
+				'https://sonyhondamobility01.my.site.com/ESWECS1723011659341',
 				{
-					scrt2URL: 'https://sonyhondamobility01--uat.sandbox.my.salesforce-scrt.com'
+					scrt2URL: 'https://sonyhondamobility01.my.salesforce-scrt.com'
 				}
 			);
 		} catch (err) {
@@ -56,12 +55,12 @@
 	window.addEventListener(
         "onEmbeddedMessagingReady", () => {
             embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
-                'CS_AfeelaId' : '',
-				'CS_SessionId' : 'csi567845'
+                'CS_AfeelaId' : 'C26478',
+				'CS_SessionId' : ''
             } );
         }
     );
 </script>
-<script type='text/javascript' src='https://sonyhondamobility01--uat.sandbox.my.site.com/ESWECS1723011659341/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-	</body>
+<script type='text/javascript' src='https://sonyhondamobility01.my.site.com/ESWECS1723011659341/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+  </body>
 </html>
