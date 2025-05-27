@@ -55,5 +55,5 @@
     }
 );
 </script> 
-</script>
 <script type='text/javascript' src='https://sonyhondamobility01--uat.sandbox.my.site.com/ESWECS21744283724514/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
