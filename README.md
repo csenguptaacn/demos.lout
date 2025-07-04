@@ -38,6 +38,13 @@
             margin-bottom: 10px;
             display: block;
         }
+	   article {
+        background-color: #000;
+        color: #fff;
+        border: none !important;
+        padding: 20px;
+        border-radius: 6px;
+    }
     </style>    
     </head>
     <body>
