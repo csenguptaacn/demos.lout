@@ -1,41 +1,27 @@
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-  
-        <div id='targetlout'>Welcome, I am Afeela Hoster -----!!!</div>
-	<button onclick="login()">Load LOUT</button>
-
-    <script>
-        function login() {
-		    var newdiv = document.createElement('div');
-			newdiv.setAttribute("id", "lightningout");		
-                         document.body.appendChild(newdiv);   
-			
-			try{
-			$Lightning.use(
-			'c:SampleAuraDepApp', // name of the Lightning app
-			function () {
-          // Callback once framework and app loaded
-			$Lightning.createComponent(
-            'c:sampleloutLWC', // top-level component of your app
-            {}, // attributes to set on the component when created
-            'lightningout', // the DOM location to insert the component
-            function (cmp) {
-              // callback when component is created and active on the page
-				}
-			);
-			},
-			'https://chandrangshu-dev-ed.my.site.com/louthoster'
-      );
-	  }
-	   catch (e) {
-  console.error("Lightning.use failed:", e);
-}
-			}
-    </script>
-	<script src="https://chandrangshu-dev-ed.my.site.com/louthoster/lightning/lightning.out.js"></script>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <h1>My External Page</h1>
+        <div id="lightning-out"></div>
+	    <script src="https://chandrangshu-dev-ed.my.site.com/louthoster/lightning/lightning.out.js"></script>
+        <script>
+            $Lightning.use(
+                'c:SampleAuraDepApp', // name of the Lightning Out app
+                function () { // callback after the framework and app load
+                    $Lightning.createComponent(
+                        'c:sampleloutLWC', // top-level component of the Lightning Out app
+                        {}, // attributes to set on the component
+                        'lightning-out', // DOM element ID where the component is inserted
+                        function (cmp) { // callback after the component loads
+                            console.log('The component was created.');
+                        }
+                    );
+                },
+                'https://chandrangshu-dev-ed.my.site.com/louthoster'  // Experience Cloud site endpoint
+            );
+        </script>
+    </body>
 </html>
