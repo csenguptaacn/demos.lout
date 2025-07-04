@@ -5,7 +5,7 @@
   </head>
   <body>
   
-        <div id='targetlout'>Welcome, I am Afeela Hoster -----!!!</div>
+        <div id='targetlout'>Lightning Out Example-----!!!</div>
 	<button onclick="login()">Load LOUT</button>
 
     <script>
@@ -16,11 +16,11 @@
 			
 			
 			$Lightning.use(
-			'c:SampleAuraDepApp', // name of the Lightning app
+			'c:lout_webinquiryapp', // name of the Lightning app
 			function () {
           // Callback once framework and app loaded
 			$Lightning.createComponent(
-            'c:sampleloutLWC', // top-level component of your app
+            'c:loutwebinquirydev', // top-level component of your app
             {}, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
@@ -28,10 +28,10 @@
 				}
 			);
 			},
-		'https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelachathost'
+		'https://chandrangshu-dev-ed.my.site.com'
       );
 			}
     </script>
-	<script src="https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelachathost/lightning/lightning.out.js"></script>
+	<script src="https://chandrangshu-dev-ed.my.site.com/lightning/lightning.out.js"></script>
 	</body>
 </html>
