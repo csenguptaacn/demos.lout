@@ -24,8 +24,12 @@
             {}, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
-              // callback when component is created and active on the page
-				}
+        console.log("Component loaded:", cmp);
+      },
+      function (error) {
+        console.error("Lightning Out Error:", error);
+        alert("Error loading component: " + error.message);
+      }
 			);
 			},
 			'https://chandrangshu-dev-ed.my.site.com/louthoster'
