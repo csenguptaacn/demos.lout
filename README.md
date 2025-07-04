@@ -5,7 +5,7 @@
   </head>
   <body>
   
-        <div id='targetlout'>Welcome, I am Afeela Hoster</div>
+        <div id='targetlout'>Welcome, I am Afeela Hoster -----!!!</div>
 	<button onclick="login()">Login for LOUT</button>
 
     <script>
@@ -22,8 +22,8 @@
 			$Lightning.createComponent(
             'c:CSMessagingSessionUtility', // top-level component of your app
             {
-               'clientsessionid' : 'cs4557383492',
-               'afeelaid' : 'af5649586',
+               'clientsessionid' : 'csi5778345',
+               'afeelaid' : 'af2963429',
             }, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
@@ -31,20 +31,20 @@
 				}
 			);
 			},
-		'https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacss'
+		'https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelachathost'
       );
 			}
     </script>
-	<script src="	https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelacss/lightning/lightning.out.js"></script>
+	<script src="https://sonyhondamobility01--dev1.sandbox.my.site.com/afeelachathost/lightning/lightning.out.js"></script>
 	<script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
- 
+
 			embeddedservice_bootstrap.init(
 				'00DQL000003Reaj',
-				'CS_Afeela_Bot_Embedded_Service',
-				'https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWCSAfeelaBotEmbedded1721384157587',
+				'ECS',
+				'https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWECS1723011659341',
 				{
 					scrt2URL: 'https://sonyhondamobility01--dev1.sandbox.my.salesforce-scrt.com'
 				}
@@ -54,15 +54,15 @@
 		}
 	};
 	
-	window.addEventListener(
+		window.addEventListener(
         "onEmbeddedMessagingReady", () => {
             embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
-                'CS_AfeelaId' : 'af6843536',
-				'CS_SessionId' : 'cs4567895'
+                'CS_AfeelaId' : '',
+				'CS_SessionId' : 'csi5778345'
             } );
         }
     );
 </script>
-<script type='text/javascript' src='https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWCSAfeelaBotEmbedded1721384157587/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-     </body>
+<script type='text/javascript' src='https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWECS1723011659341/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+	</body>
 </html>
