@@ -9,11 +9,11 @@
 		
 		
 		$Lightning.use(
-		'c:lout_webinquiryapp', // name of the Lightning app
+		'c:Lout_webinquiryapp', // name of the Lightning app
 		function () {
       // Callback once framework and app loaded
 		$Lightning.createComponent(
-        'c:lout_webinquiryform', // top-level component of your app
+        'c:Loutwebinquirydev', // top-level component of your app
         {
 
         }, // attributes to set on the component when created
