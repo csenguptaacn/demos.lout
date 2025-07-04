@@ -5,7 +5,7 @@
   </head>
   <body>
   
-        <div id='targetlout'>Lightning Out Example-----!!!</div>
+        <div id='targetlout'>Welcome, I am Afeela Hoster -----!!!</div>
 	<button onclick="login()">Load LOUT</button>
 
     <script>
@@ -16,11 +16,11 @@
 			
 			
 			$Lightning.use(
-			'c:lout_webinquiryapp', // name of the Lightning app
+			'c:SampleAuraDepApp', // name of the Lightning app
 			function () {
           // Callback once framework and app loaded
 			$Lightning.createComponent(
-            'c:Loutwebinquirydev', // top-level component of your app
+            'c:sampleloutLWC', // top-level component of your app
             {}, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
