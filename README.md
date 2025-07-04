@@ -6,7 +6,7 @@
     <body>
         <h1>My External Page</h1>
         <div id="lightning-out"></div>
-        <script src="https://chandrangshu-dev-ed.my.salesforce.com/lightning/lightning.out.js"></script>
+        <script src="https://chandrangshu-dev-ed.my.site.com/lightning/lightning.out.js"></script>
         <script>
             $Lightning.use(
                 'c:lout_webinquiryapp', // name of the Lightning Out app
@@ -20,7 +20,7 @@
                         }
                     );
                 },
-                'https://SITE_DOMAIN/SITE_URL' // Experience Cloud site endpoint
+                'https://chandrangshu-dev-ed.my.site.com' // Experience Cloud site endpoint
             );
         </script>
     </body>
