@@ -28,10 +28,10 @@
 				}
 			);
 			},
-		'https://chandrangshu-dev-ed.my.site.com'
+			'https://chandrangshu-dev-ed.my.site.com/louthoster'
       );
 			}
     </script>
-	<script src="https://chandrangshu-dev-ed.my.site.com/lightning/lightning.out.js"></script>
+	<script src="https://chandrangshu-dev-ed.my.site.com/louthoster/lightning/lightning.out.js"></script>
 	</body>
 </html>
