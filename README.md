@@ -20,7 +20,7 @@
 			function () {
           // Callback once framework and app loaded
 			$Lightning.createComponent(
-            'c:loutwebinquirydev', // top-level component of your app
+            'c:Loutwebinquirydev', // top-level component of your app
             {}, // attributes to set on the component when created
             'lightningout', // the DOM location to insert the component
             function (cmp) {
