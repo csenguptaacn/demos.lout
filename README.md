@@ -1,4 +1,4 @@
-<div id='targetlout'>Welcome, I am Custom Lightning Web Component Hoster -----!!!</div>
+   <div id='targetlout'>Welcome, I am Custom Lightning Web Component Hoster -----!!!</div>
 <button onclick="login()">Load LOUT section</button>
 
 <script>
@@ -21,10 +21,11 @@
         function (cmp) {
           // callback when component is created and active on the page
 			}
-		);/
+		);
 		},
 	'https://chandrangshu-dev-ed.my.site.com'
   );
 		}
 </script>
 <script src="https://chandrangshu-dev-ed.my.site.com/lightning/lightning.out.js"></script>
+
