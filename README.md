@@ -14,8 +14,8 @@
 
 			embeddedservice_bootstrap.init(
 				'00DQL000003Reaj',
-				'ECS',
-				'https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWECS1723011659341',
+				'MobileApp',
+				'https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWMobileApp1759489999007',
 				{
 					scrt2URL: 'https://sonyhondamobility01--dev1.sandbox.my.salesforce-scrt.com'
 				}
@@ -25,7 +25,8 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWECS1723011659341/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWMobileApp1759489999007/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 
 </body>
 </html>
