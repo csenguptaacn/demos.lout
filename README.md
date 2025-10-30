@@ -79,6 +79,6 @@
 
 	};
 </script>
-<script type='text/javascript' src='https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWMobileApp1759489999007/assets/js/bootstrap.min.js%27 onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWMobileApp1759489999007/assets/js/bootstrap.min.js%27' onload='initEmbeddedMessaging()'></script>
  </body>
 </html>
