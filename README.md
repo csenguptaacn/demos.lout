@@ -1,26 +1,13 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salesforce Embedded Messaging</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        #embedded-messaging-container {
-            width: 100%;
-            height: 100vh; /* Full height */
-        }
-    </style>
-</head>
-<body>
-    <div id="embedded-messaging-container"></div>
-
-    <!-- Salesforce Embedded Messaging Script -->
-    
-    <script type='text/javascript'>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+  
+        <div id='targetlout'>Welcome, I am Afeela Hoster</div>
+	<button onclick="login()">Login for LOUT</button>
+<script type='text/javascript'>
 
     window.addEventListener("onEmbeddedMessagingReady", () => {
 
@@ -93,6 +80,5 @@
 	};
 </script>
 <script type='text/javascript' src='https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWMobileApp1759489999007/assets/js/bootstrap.min.js%27 onload='initEmbeddedMessaging()'></script>
- 
-</body>
+ </body>
 </html>
