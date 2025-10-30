@@ -20,46 +20,80 @@
     <div id="embedded-messaging-container"></div>
 
     <!-- Salesforce Embedded Messaging Script -->
-    <script type="text/javascript">
-        // Listen for when Embedded Messaging is ready
-        window.addEventListener("onEmbeddedMessagingReady", () => {
-            console.log("Embedded Messaging is ready.");
-            
-            // Send your identity token to Salesforce
-            embeddedservice_bootstrap.userVerificationAPI.setIdentityToken({
-                identityTokenType: "JWT",
-                identityToken: "eyJraWQiOiJtb2JpbGVVc2VyVmVyaWZpY2F0aW9uIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJNb2JpbGVVc2VyU2V0dXBWZXJpZmljYXRpb25Jc3N1ZXIiLCJzdWIiOiJwYXJ0aGEuaGFsZGVyQGFjY2VudHVyZS5jb20iLCJleHAiOjE3NjA2MDgzNDQsImlhdCI6MTc2MDYwNDc0NH0.V18RWA3t033ua0S4BysGl1htmpVGCW8ZZIIOXWu035_U5mpcHhJer399YMyKXJvXLF3O6LuzQ8CkDeLABhWMHU6cWCmWMcnrwlzvD5HkBZR8T1LD7x6n79_tYgF3tZLUOgkmSBAOROPd9Ld8ZN-g12n0wzcto8KXqBID2q1uAY0yfQ8sZgzBiojnyeeosmnD0CxXnQ1IfLAdJkH9J-R4G3LJhC8RZcdlofVEbIFCBK4-xFksnub45z1SmofalWAL3SHddVdBDTkYz04RBKzgMBLAF_my53wm4SlhpBp_C519cZspxDtTNsn9hTCD7frweeMa1wa_CziAQLoTGpJndw"
-            });
-        });
+    
+    <script type='text/javascript'>
 
-        // Listen for expired identity token
-        window.addEventListener("onEmbeddedMessagingIdentityTokenExpired", () => {
-            console.log("Identity token expired. Refresh and set a new token.");
-            // Refresh the identity token here
-            // embeddedservice_bootstrap.userVerificationAPI.setIdentityToken({ ... });
-        });
+    window.addEventListener("onEmbeddedMessagingReady", () => {
 
-        // Initialize Embedded Messaging
-        function initEmbeddedMessaging() {
-            try {
-                embeddedservice_bootstrap.settings.language = 'en_US';
+      console.log("Received the onEmbeddedMessagingReady event.");
 
-                embeddedservice_bootstrap.init(
-                    '00DQL000003Reaj', // Salesforce Org ID
-                    'MobileApp', // Deployment Name
-                    'https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWMobileApp1759489999007', // Base URL
-                    {
-                        scrt2URL: 'https://sonyhondamobility01--dev1.sandbox.my.salesforce-scrt.com'
-                    }
-                );
-            } catch (err) {
-                console.error('Error loading Embedded Messaging: ', err);
-            }
-        }
-    </script>
 
-    <!-- Bootstrap script from Salesforce -->
-    <script type="text/javascript" src="https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWMobileApp1759489999007/assets/js/bootstrap.js" onload="initEmbeddedMessaging()">
-    </script>
+      // Send your identity token to Salesforce.
+
+      embeddedservice_bootstrap.userVerificationAPI.setIdentityToken({
+
+        identityTokenType: "JWT",
+
+        identityToken: "eyJraWQiOiJtb2JpbGVVc2VyVmVyaWZpY2F0aW9uIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJNb2JpbGVVc2VyU2V0dXBWZXJpZmljYXRpb25Jc3N1ZXIiLCJzdWIiOiJhNzNmZWNkMS02ZjkzLTRkM2MtYThhNS05NjAzNDIxMmFjOTMiLCJleHAiOjE3NjE4MjQ1NDAsImlhdCI6MTc2MTgyMDk0MH0.IZVom3g3KWqxetw2hMUFGzozx7PDS7AaSIusfeiJ6di-QC_ueKiVmTY7i7lQ58Q1M2v4Nm2H0hjXlV1Dj9RCKrcAfSP5F3veNbVHzpy-PUJkUB0TPaJJOoT_GfKjn60jAXjlxhNtr_iJNUOmv7kaomsfmYnKtiWw_cwiNp_M5rs68r_U_GplVLZkfaJXADmrTzxnEZWTEB4D0AieVTdPqhW8EJr2r1LdXmRGeJx7cFzBh0QZc0dO6I_loUn0Tpq46W3_kbstl7Kt-5GwoM0Jv6mVX9ODVJPRN44CqRnOM8ms46vKoj-_PZZ7eRuPdJ97RKewaLD4eJZmIL91krdBtg"
+
+      });
+
+   	  embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
+
+         "CS_AfeelaId" : "a73fecd1-6f93-4d3c-a8a5-96034212ac93"
+
+      });
+
+    });
+
+
+     window.addEventListener("onEmbeddedMessagingIdentityTokenExpired", () => {
+
+      console.log("Received the onEmbeddedMessagingIdentityTokenExpired event.");
+
+      // Refresh the identity token and send it to Salesforce.
+
+      /*embeddedservice_bootstrap.userVerificationAPI.setIdentityToken({
+
+        identityTokenType: "JWT",
+
+        identityToken:{JWT token provide},
+
+      });*/
+
+    });
+
+	function initEmbeddedMessaging() {
+
+		try {
+
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+ 
+			embeddedservice_bootstrap.init(
+
+				'00DQL000003Reaj',
+
+				'MobileApp',
+
+				'https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWMobileApp1759489999007',
+
+				{
+
+					scrt2URL: 'https://sonyhondamobility01--dev1.sandbox.my.salesforce-scrt.com'
+
+				}
+
+			);
+
+		} catch (err) {
+
+			console.error('Error loading Embedded Messaging: ', err);
+
+		}
+
+	};
+</script>
+<script type='text/javascript' src='https://sonyhondamobility01--dev1.sandbox.my.site.com/ESWMobileApp1759489999007/assets/js/bootstrap.min.js%27 onload='initEmbeddedMessaging()'></script>
+ 
 </body>
 </html>
