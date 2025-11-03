@@ -13,11 +13,11 @@
       // Send your identity token to Salesforce.
       embeddedservice_bootstrap.userVerificationAPI.setIdentityToken({
         identityTokenType: "JWT",
-        identityToken: "eyJraWQiOiJtb2JpbGVVc2VyVmVyaWZpY2F0aW9uIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJNb2JpbGVVc2VyU2V0dXBWZXJpZmljYXRpb25Jc3N1ZXIiLCJzdWIiOiJhNzNmZWNkMS02ZjkzLTRkM2MtYThhNS05NjAzNDIxMmFjOTMiLCJleHAiOjE3NjIxNTkxNjAsImlhdCI6MTc2MjE1NTU2MH0.sWKshHVGinMEuy9MFfLj7CpC70gkgDGn0I7uGmY6_GCE1FSJb8eTAro47bPu_DamiGIwHkEETKd9afMm4Bc4t8bExLw4qsxhly46vQYnH_v9Z6oLs-U8a8B15Uyzvb4H5cg4I00FDEow1DYNpH564mzHMnhu1Yt5NOsVmUHWq8_Ew8HxWpl0bXKdZGP3jIuZ5hwr09te5c3A68-KtnQ600Vx9WHgQHbJZIX-lhnRIahZCDNI-vXC6fX77uLjJNua2ndY5iLQjldxwio_2A5r9RVkEW9U_tYwORthk5brcng36W2c9lGkBxmGoBXWwasEtlTAjf4i5ZhBhpteEa0TTw"
+        identityToken: "eyJraWQiOiJtb2JpbGVVc2VyVmVyaWZpY2F0aW9uIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJNb2JpbGVVc2VyU2V0dXBWZXJpZmljYXRpb25Jc3N1ZXIiLCJzdWIiOiJhNzNmZWNkMS02ZjkzLTRkM2MtYThhNS05NjAzNDIxMmFjOTMiLCJleHAiOjE3NjIxODIwNDEsImlhdCI6MTc2MjE3ODQ0MX0.le0CwOxHcTRoWH44Tm9wwNgkAFInjJRPEuTpw4WM37yE8Vg-_jfBuTneK53odI3qbq5MuWCK6n-06GlMCkN3bUVSzhPgQiJIsb3py932GUyIVKOV5bxJ0t6-a7QX7BX31jyF_L_-3Ls-bJHjnUFoAA2dSDAszb2YKigsCojGb0HUD3bRtVvH4gIiVHcjKATDFl0IJvmZMWY6lqN6WKVvjpKBsUKfPWIkDjcrS-hUl9de6akNkkjXJaS3lHIAlFTfaRDeTJJLQuY_8JcM1YSnrPeqbptBAiRZu3a1EPZiG-Ts2lsQKCD55OrON6n06GJRCbKUBdFcL3CPfoeuKAGRiQ"
       });
-   	 // embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
-      //   "CS_AfeelaId" : "a73fecd1-6f93-4d3c-a8a5-96034212ac93"
-    //  });
+   	  embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
+         "CS_AfeelaId" : "a73fecd1-6f93-4d3c-a8a5-96034212ac93"
+      });
     });
 
 
